@@ -15,7 +15,7 @@ This is an upgraded version of the [original Apply Tracker](https://github.com/D
 - Custom error handling
 - Server-side input validation using Joi
 
-![new](images/home.png)
+![home](images/home.png)
 
 ## 🚀 Technologies Used
 
@@ -27,6 +27,14 @@ This is an upgraded version of the [original Apply Tracker](https://github.com/D
 - Joi (validation)
 - Method-Override
 - Express custom error class
+
+## ScreenShots
+![application List](images/applications.png)
+
+![new](images/new.png)
+
+![faang](images/FAANG.png)
+
 
 ## 📂 Project Structure
 
