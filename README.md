@@ -15,6 +15,8 @@ This is an upgraded version of the [original Apply Tracker](https://github.com/D
 - Custom error handling
 - Server-side input validation using Joi
 
+![new](images/home.png)
+
 ## 🚀 Technologies Used
 
 - Node.js
