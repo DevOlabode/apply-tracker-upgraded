@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000;
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -99,6 +100,6 @@ app.use((err, req, res, next)=>{
     res.status(statusCode).render('applyTracker/error', {err})
 });
 
-app.listen('5000', ()=>{
-    console.log('APP IS LISTENING ON PORT 3000')
+app.listen(port, ()=>{
+    console.log('APP IS LISTENING ON PORT ${port}')
 });
