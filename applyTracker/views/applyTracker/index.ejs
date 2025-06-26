@@ -1,0 +1,11 @@
+<% layout('layout/boilerplate') %>
+<h3>All Applications</h3>
+<ul class="list-group">
+  <% for (let application of applications) { %>
+    <li class="list-group-item bg-dark text-light border-light">
+      <strong><%= application.company %></strong> — <b><%= application.position %></b>
+      <a class="btn btn-sm btn-outline-light float-end" href="/application/<%= application._id %>">View</a>
+    </li>
+  <% } %>
+</ul>
+<a href="/application/new" class="btn btn-outline-light mt-4">Add a New Application</a>

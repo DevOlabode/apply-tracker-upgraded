@@ -1,0 +1,42 @@
+<% layout('layout/boilerplate.ejs') %>
+<h2>Edit Application</h2>
+
+<form action="/application/<%= application._id %>?_method=PUT" class="needs-validation" method="POST" novalidate>
+  <div class="mb-3">
+    <label for="company" class="form-label">Company:</label>
+    <input type="text" class="form-control bg-secondary text-light" id="company" name="company" value="<%= application.company %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="position" class="form-label">Position:</label>
+    <input type="text" class="form-control bg-secondary text-light" id="position" name="position" value="<%= application.position %>" required>
+  </div>
+
+  <div class="mb-3">r
+    <label for="status" class="form-label">Status:</label>
+    <select class="form-select bg-secondary text-light" id="status" name="status" required>
+      <% for (let dd of status) { %>
+        <option value="<%= dd %>" <%= application.status === dd ? 'selected' : '' %>><%= dd %></option>
+      <% } %>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="appliedDate" class="form-label">Applied Date:</label>
+    <input type="date" class="form-control bg-secondary text-light" id="appliedDate" name="appliedDate" value="<%= application.appliedDate %>" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="interviewDate" class="form-label">Interview Date:</label>
+    <input type="date" class="form-control bg-secondary text-light" id="interviewDate" name="interviewDate" value="<%= application.interviewDate %>">
+  </div>
+
+  <div class="mb-3">
+    <label for="notes" class="form-label">Notes:</label>
+    <textarea class="form-control bg-secondary text-light" id="notes" name="notes" rows="3"><%= application.notes %></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-outline-light">Update Application</button>
+</form>
+
+<a href="/application" class="btn btn-link text-light mt-3">Back to Application List</a>

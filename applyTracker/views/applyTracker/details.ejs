@@ -1,0 +1,21 @@
+<% layout('layout/boilerplate') %>
+<h3><i><%= findApplication.company %></i> Application</h3>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item bg-dark text-light border-light">Company: <b><%= findApplication.company %></b></li>
+  <li class="list-group-item bg-dark text-light border-light">Position: <b><%= findApplication.position %></b></li>
+  <li class="list-group-item bg-dark text-light border-light">Status: <b><%= findApplication.status %></b></li>
+  <li class="list-group-item bg-dark text-light border-light">Applied Date: <b><%= findApplication.appliedDate %></b></li>
+  <% if (findApplication.interviewDate !== '') { %>
+    <li class="list-group-item bg-dark text-light border-light">Interview Date: <b><%= findApplication.interviewDate %></b></li>
+  <% } %>
+  <li class="list-group-item bg-dark text-light border-light">Notes: <b><%= findApplication.notes %></b></li>
+</ul>
+
+<div class="mt-4">
+  <a href="/application/<%= findApplication._id %>/edit" class="btn btn-outline-light me-2">Edit</a>
+  <a href="/application" class="btn btn-outline-light me-2">All Applications</a>
+
+  <form class="d-inline" method="POST" action="/application/<%= findApplication._id %>?_method=DELETE">
+    <button class="btn btn-outline-danger">Delete</button>
+  </form>
+</div>
