@@ -1,7 +1,9 @@
 
-# 📝 Application Tracker
+# 📝 Application Tracker (Upgraded)
 
-This is a full-stack Node.js web application built using Express and MongoDB that allows users to track job applications. Users can create, view, update, and delete applications, and each application can have statuses such as `applied`, `interviewing`, `offer`, and more.
+This is an upgraded version of the [original Apply Tracker](https://github.com/DevOlabode/Apply-tracker) project. It is a full-stack Node.js web application built using Express and MongoDB that allows users to track job applications. Users can create, view, update, and delete applications, and each application can have statuses such as `applied`, `interviewing`, `offer`, and more.
+
+🔗 GitHub Repo: [apply-tracker-upgraded](https://github.com/DevOlabode/apply-tracker-upgraded)
 
 ## 🌟 Features
 
@@ -38,8 +40,8 @@ index.js        → Main server file
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/application-tracker.git
-   cd application-tracker
+   git clone https://github.com/DevOlabode/apply-tracker-upgraded.git
+   cd apply-tracker-upgraded
    ```
 
 2. **Install dependencies:**
@@ -90,6 +92,7 @@ index.js        → Main server file
 - Add user authentication
 - Add search/filter by job title or status
 - Add support for file uploads (resume, cover letter, etc.)
+- UI improvements and mobile responsiveness
 
 ## 🤝 Contributing
 
@@ -101,4 +104,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-> Made with ❤️ by [Samuel Olabode]
+> Made with ❤️ by [Samuel Olabode](https://github.com/DevOlabode)
