@@ -92,7 +92,6 @@ index.js        → Main server file
 - Add user authentication
 - Add search/filter by job title or status
 - Add support for file uploads (resume, cover letter, etc.)
-- UI improvements and mobile responsiveness
 
 ## 🤝 Contributing
 
